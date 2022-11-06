@@ -89,7 +89,7 @@ insert      往数组中的指定位置插入数据（配合下标使用）
 pop         从数据中取走数据（通过下标来操作）
 extend      合并数据
 sort        排序
-remove      移动
+remove      删除某个值,里面填的是值
 clear       清空
 resvers     颠倒/倒序，和排序一起用
 
@@ -98,7 +98,6 @@ name = input("请输入名字：")
 a.append(name)
 a.insert(3,name)
 print(a)
-"""
 
 
 # name = input("请输入名字：")
@@ -107,17 +106,34 @@ print(a)
 # # xx = a.pop(5)
 # # print(xx)
 # print(a)
-# c = ["今天","明天","后天"]
+"""
+
+c = ["今天","明天","后天"]
+
+
+"""
 # # a.extend(c)
 # a = a + c
 # print(a+c)
+"""
 
 
 
-c = [4,5,7,9,2]
-c.sort(reverse=True)
-print(c) 
+d = [4,5,7,9,2,"哈哈","哈哈"]
+# d.sort(reverse=True) 
+# d.reverse
+# d.clear()
+print(d)
+d.remove("哈哈")
+print(d) 
 
+
+
+
+
+
+
+ 
 
 
 
