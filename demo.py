@@ -65,8 +65,58 @@ print(a[0:4])
 
 # 把欧阳取出来
 # print(a[-1][-1])
+
+
+# 数组
+# a = []
+"""
+b = ("刘巧云","欧阳","马超")
+a = [1,2,3,4,"哈哈","希希",True,None,b]
+print(a)
+
+
+"""
+元组和数组的操作方式一模一样
+区别是元组不可以修改，数组可以修改
+
+
+
+数组 [] 的方法：
+index       获取某个值的下标
+count       获取某个下标值的个数
+append      往数组中追加内容
+insert      往数组中的指定位置插入数据（配合下标使用）
+pop         从数据中取走数据（通过下标来操作）
+extend      合并数据
+sort        排序
+remove      移动
+clear       清空
+resvers     颠倒/倒序，和排序一起用
+
+
+name = input("请输入名字：")
+a.append(name)
+a.insert(3,name)
+print(a)
 """
 
+
+# name = input("请输入名字：")
+# a.append(name)
+# a.insert(3,name)
+# # xx = a.pop(5)
+# # print(xx)
+# print(a)
+# c = ["今天","明天","后天"]
+# # a.extend(c)
+# a = a + c
+# print(a+c)
+
+
+
+c = [4,5,7,9,2]
+c.sort(reverse=True)
+print(c) 
 
 
 
