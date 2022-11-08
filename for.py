@@ -115,9 +115,7 @@ for i in t_user:
 a = ["张","胡","王","夏","张","李"]
 for i in range(len(a)) :
     if a[i] ==  a[i+1]:
-        # 找到，退出
-    else:
-    print(i)
+     print(i)
     
 
 
@@ -126,7 +124,7 @@ for i in range(len(a)) :
 
 
 # 排序：请用python对a列表进行从小到大的排序
-a = [,2,3,555,666,777,-1]
+a = [1,2,3,555,666,777,-1]
 
 
 
