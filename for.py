@@ -69,9 +69,67 @@ for i,j in zhanghao.items():
 range()   序列生成器(固定用法,range里只能用数字)
 """
 
-
+"""
 # range [0,1,2,3,4,5,6,7,8,9]
 a = ["李虎","都督","古巴","欧巴","都司","王","刘","蔡","马","董"]
 for i in range(len(a)):   #len(a) = 10;range(10)>[0,1,2,3,4,5,6,7,8,9]
-    print(a[i])#len(a)代表a里有多少个元素，range（len(a)）是下标算法
+    print(a[i])#len(a)代表a里有多少个元素,range(len(a)）是下标算法
+"""
+
+#进阶
+# a = [[1,2,3],[4,5,6]]
+# for i in a:
+#     for j in i:
+#         print(j)
+
+
+"""
+b =[{"username":"郭子","passward":"123456"},{"username":"小玉","passward":"123456"}]
+for i in b:#{"username":"郭子","passward":"123456"}j1=username,j2=passward
+    for j in i:#{"username":"小玉","passward":"123456"}j1=username,j2=passward
+        # print(i)        
+        print(j)
+        print(i[j])
+"""
+
+#用for循环实现用户登录：t_user是数据的表
+t_user = {"username":"郭子","passward":"123456"},{"username":"小玉","passward":"123456"}
+u = input("请输入账号:")
+p = input("请输入密码:")
+a = 1
+for i in t_user:
+    if u == i.get("username") and p == i.get("passward"):
+        print("登陆成功")
+        break   #终止循环
+    else:
+        # 最后一次运行还没有这个账号：再来打印登陆失败
+        # 怎么判断是最后一次
+        if len(t_user) == a:
+            print("登陆失败 ")
+
+    a = a + 1
+
+# 什么算法，怎么实现出来
+# 请用python写出a列表中的重复元素的下标和值
+
+a = ["张","胡","王","夏","张","李"]
+for i in range(len(a)) :
+    if a[i] ==  a[i+1]:
+        # 找到，退出
+    else:
+    print(i)
     
+
+
+
+
+
+
+# 排序：请用python对a列表进行从小到大的排序
+a = [,2,3,555,666,777,-1]
+
+
+
+
+
+
