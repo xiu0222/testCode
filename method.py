@@ -21,6 +21,7 @@ def login(username,password):
     p = input("请输入密码:")
     a = 1
     for i in t_user:
+        print('这是第{}次运行,i的值是{}'.format(a,i))
         if u == i.get("username") and p == i.get("passward"):
             print("登陆成功")
             break   #终止循环
@@ -30,7 +31,7 @@ def login(username,password):
             if len(t_user) == a:
                 print("登陆失败 ")
 
-    a = a + 1
+        a = a + 1
 
 u = input("请输入账号：")
 p = input("请输入密码：")
