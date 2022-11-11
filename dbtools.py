@@ -22,10 +22,12 @@ query("123")
 if _name_ = "_main_":
     # sql = "select * from t_user where username ='liuyun'"
     sql ="select * from t_pymysql_account wherer username = 'python'"
+   #更换数据表格时,直接改sql语句就行
     a = query(sql)
     print(a) 
 
-
+#结果出来((列1),(列2),(列3),)
+#返回结果是元组,返回的值中,有逗号时,是tuple格式,如果没有最后的逗号,那就是int格式.
 
 
 """
