@@ -35,7 +35,7 @@ if _name_ = "_main_":
 
 
 
-
+# 用python查询商品t_goods表里的商品名为iphone的价格,并且判断价格如果大于5488,则显示买不起,否则显示买买买
 
 sql = "selsct * from t_goods where goods = 'iphone12'"
 res = query(sql)
